@@ -1,0 +1,75 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 8px;
+    background-color: #f2f2f2;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+h3{
+    text-align: center;
+}
+
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#filterName, #filterCategory{
+    width: 80%;
+}
+
+#filterPriceMin, #filterPriceMax{
+    width: 50px;
+}
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+button {
+    padding: 2px 5px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#filterButton {
+    margin-right: 10px;
+}
+
+#clearFiltersButton {
+    background-color: #f44336;
+}
+
+#clearFiltersButton:hover {
+    background-color: #d32f2f;
+}

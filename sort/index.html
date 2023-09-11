@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>Table Sort</h1>
+    <div class="sort-buttons">
+        <label for="sortColumn">Sort by:</label>
+        <select id="sortColumn">
+            <option value="name">Name</option>
+            <option value="age">Age</option>
+            <option value="position">Position</option>
+        </select>
+        <button id="sortAscending">Ascending</button>
+        <button id="sortDescending">Descending</button>
+    </div>    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Position</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>

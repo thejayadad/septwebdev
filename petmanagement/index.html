@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Pet Profile Manager</h1>
+        <div class="form-group">
+            <label for="petName">Pet Name:</label>
+            <input type="text" id="petName" placeholder="Enter pet's name">
+        </div>
+        <div class="form-group">
+            <label for="petAge">Pet Age:</label>
+            <input type="number" id="petAge" placeholder="Enter pet's age">
+        </div>
+        <div class="form-group">
+            <label for="petType">Pet Type:</label>
+            <input type="text" id="petType" placeholder="Enter pet's type">
+        </div>
+        <button onclick="createPetProfile()">Create Profile</button>
+        <div id="profileDescription"></div>
+        <div id="petList"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
