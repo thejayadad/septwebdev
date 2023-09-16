@@ -1,4 +1,3 @@
-// Get references to the gallery items and the modal
 const galleryItems = document.querySelectorAll('.gallery-item');
 const modal = document.getElementById('modal');
 const modalImage = document.getElementById('modal-image');

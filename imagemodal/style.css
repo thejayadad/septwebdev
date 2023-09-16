@@ -1,10 +1,8 @@
-/* Reset some default styles */
 body, html {
     margin: 0;
     padding: 0;
 }
 
-/* Create a grid-based gallery */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -24,26 +22,14 @@ body, html {
     transition: transform 0.3s ease;
 }
 
-/* Add a hover effect to the gallery items */
 .gallery-item:hover img {
     transform: scale(1.1);
 }
 
-/* Add a fade-in animation */
 .gallery-item img {
     opacity: 0;
     animation: fadeIn 0.5s ease-in-out forwards;
 }
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-/* Modal styles */
 .modal {
     display: none;
     position: fixed;
@@ -71,4 +57,14 @@ body, html {
     font-weight: bold;
     color: white;
     cursor: pointer;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
