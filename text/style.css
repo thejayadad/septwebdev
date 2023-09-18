@@ -1,0 +1,31 @@
+h2{
+    font-size: 80px;
+    font-weight: 500;
+    letter-spacing: 8px;
+    text-decoration: none;
+    color: transparent;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+    text-align: center;
+    position: relative;
+}
+h2::before,
+h2::after{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .3s ease-out;
+}
+h2:hover::before{
+    color: #bb0000;
+    transform: translate(12px, -12px);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+h2:hover::after{
+    color: #77eff7;
+    transform: translate(24px, -24px);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
