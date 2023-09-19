@@ -8,28 +8,24 @@ body {
     text-align: center;
 }
 
-#hi-message {
+#message{
     font-size: 48px;
     margin-top: 100px;
 }
 
-#name-container {
-    overflow: hidden;
+#box{
     white-space: nowrap;
     font-size: 36px;
-    animation: scrollNames 20s linear infinite;
+    animation: scroll 20s linear infinite;
 }
-
-.name {
+.name{
     display: inline-block;
     margin-right: 40px;
 }
-
-@keyframes scrollNames {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
+@keyframes scroll{
+    0%{
+        transform: translateX(100%)
+    } 100%{
         transform: translateX(-100%);
     }
 }
