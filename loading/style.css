@@ -1,0 +1,61 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+.loader, .loader span{
+    width: 2em;
+    height: 2em;
+    border: .25em solid white;
+    font-family: 10px;
+    border-radius: 1em;
+    position: absolute;
+    mix-blend-mode: screen;
+}
+.loader{
+    background-color: orangered;
+    animation: rotating 2s infinite;
+}
+@keyframes rotating{
+    to {
+        tranform: rotate(1turn)
+    }
+}
+.loader span{
+    animation: de-rotating 4s linear infinite;
+}
+@keyframes de-rotating {
+    from, to {
+        transform: rotate(0deg) scale(.5);
+    } 50% {
+        transform: rotate(-180deg) scale(1.2);
+    }
+}
+.loader span:nth-child(1){
+    top: 2em;
+    left: 2em;
+    background-color: lightblue;
+}
+.loader span:nth-child(2){
+    top: -2em;
+    left: 2em;
+    background: orange;
+}
+.loader span:nth-child(3){
+    top: 2em;
+    left: -2em;
+    background: palevioletred;
+}
+.loader span:nth-child(4){
+    top: -2em;
+    left: -2em;
+    background: greenyellow;
+}
