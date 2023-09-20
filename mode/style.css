@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+#circle {
+    width: 100px;
+    height: 100px;
+    background-color: #ff3333;
+    border-radius: 50%;
+    position: relative;
+    animation: bounce 2s ease infinite alternate;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}

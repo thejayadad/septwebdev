@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    padding-left: 9px;
     box-sizing: border-box;
 }
 body{
@@ -8,7 +9,12 @@ body{
     font-family: monospace;
     -webkit-font-smoothing: antialiased;
 }
-h3{
+
+h4{
+    text-align: center;
+    color: white;
+}
+ h3{
     cursor: default;
     position: absolute;
     top: 0;
@@ -20,12 +26,12 @@ h3{
     margin: auto;
     display: block;
     text-align: center;
-}
-h3 span{
+ }
+ h3 span{
     position: relative;
     top: 20px;
     -webkit-animation: bounce .3s ease infinite alternate;
-    font-size: 60px;
+    font-size: 50px;
     color: white;
     text-shadow: 0 1px #ccc,
     0 2px 0 #ccc,
@@ -33,15 +39,18 @@ h3 span{
     0 4px 0 #ccc,
     0 5px 0 #ccc,
     0 10px 10px rgba(0,0,0,.4);
-}
-h3 span:nth-child(2){
-    -webkit-animation-delay: .1s;
-}
-h3 span:nth-child(3){
+ }
+ h3 span:nth-child(2){
+    -webkit-animation-delate: .1s;
+ }
+ h3 span:nth-child(3){
     -webkit-animation-delay: .2s;
-}
-h3 span:nth-child(4){
+ }
+ h3 span:nth-child(4){
     -webkit-animation-delay: .3s;
+ }
+h3 span:nth-child(5){
+    -webkit-animation-delay: .4s;
 }
 @-webkit-keyframes bounce {
     100% {
