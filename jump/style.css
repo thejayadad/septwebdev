@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: steelblue;
+    font-family: monospace;
+    -webkit-font-smoothing: antialiased;
+}
+h3{
+    cursor: default;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+h3 span{
+    position: relative;
+    top: 20px;
+    -webkit-animation: bounce .3s ease infinite alternate;
+    font-size: 60px;
+    color: white;
+    text-shadow: 0 1px #ccc,
+    0 2px 0 #ccc,
+    0 3px 0 #ccc,
+    0 4px 0 #ccc,
+    0 5px 0 #ccc,
+    0 10px 10px rgba(0,0,0,.4);
+}
+h3 span:nth-child(2){
+    -webkit-animation-delay: .1s;
+}
+h3 span:nth-child(3){
+    -webkit-animation-delay: .2s;
+}
+h3 span:nth-child(4){
+    -webkit-animation-delay: .3s;
+}
+@-webkit-keyframes bounce {
+    100% {
+        top: -20px;
+        text-shadow: 0 1px 0 #ccc,
+        0 2px 0 #ccc,
+        0 3px 0 #ccc,
+        0 4px 0 #ccc,
+        0 5px 0 #ccc,
+        0 50px 25px rgba(0,0,0,.2);
+    }
+}
