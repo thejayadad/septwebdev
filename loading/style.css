@@ -10,30 +10,37 @@ body{
     background-color: black;
     overflow: hidden;
 }
+h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 150px;
+    font-family: monospace;
+}
 
 .loader, .loader span{
     width: 2em;
     height: 2em;
     border: .25em solid white;
-    font-family: 10px;
     border-radius: 1em;
     position: absolute;
     mix-blend-mode: screen;
+
 }
 .loader{
     background-color: orangered;
     animation: rotating 2s infinite;
 }
 @keyframes rotating{
-    to {
-        tranform: rotate(1turn)
+    to{
+        transform: rotate(1turn)
     }
 }
 .loader span{
-    animation: de-rotating 4s linear infinite;
+    animation: de-rotating 2s linear infinite;
 }
 @keyframes de-rotating {
     from, to {
+
         transform: rotate(0deg) scale(.5);
     } 50% {
         transform: rotate(-180deg) scale(1.2);
@@ -44,18 +51,19 @@ body{
     left: 2em;
     background-color: lightblue;
 }
+
 .loader span:nth-child(2){
     top: -2em;
     left: 2em;
-    background: orange;
+    background-color: orange;
 }
 .loader span:nth-child(3){
     top: 2em;
     left: -2em;
-    background: palevioletred;
+    background-color: palevioletred;
 }
 .loader span:nth-child(4){
     top: -2em;
     left: -2em;
-    background: greenyellow;
+    background-color: greenyellow;
 }
