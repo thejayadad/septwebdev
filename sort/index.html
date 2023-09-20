@@ -7,25 +7,35 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <h1>Table Sort</h1>
-    <div class="sort-buttons">
-        <label for="sortColumn">Sort by:</label>
-        <select id="sortColumn">
-            <option value="name">Name</option>
-            <option value="age">Age</option>
-            <option value="position">Position</option>
-        </select>
-        <button id="sortAscending">Ascending</button>
-        <button id="sortDescending">Descending</button>
-    </div>    <table>
+    <table id="sortable-table">
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Position</th>
+                <th onclick="sortTable(0)">Name</th>
+                <th onclick="sortTable(1)">Number</th>
+                <th onclick="sortTable(2)">Position</th>
             </tr>
         </thead>
-        <tbody id="tableBody">
+        <tbody>
+            <tr>
+                <td>Lamar</td>
+                <td>8</td>
+                <td>QB</td>
+            </tr>
+            <tr>
+                <td>Ray</td>
+                <td>52</td>
+                <td>LB</td>
+            </tr>
+            <tr>
+                <td>Ogden</td>
+                <td>75</td>
+                <td>LT</td>
+            </tr>
+            <tr>
+                <td>Ed</td>
+                <td>20</td>
+                <td>FS</td>
+            </tr>
         </tbody>
     </table>
     <script src="main.js"></script>
