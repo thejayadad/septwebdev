@@ -37,6 +37,7 @@ h4::after{
     transition: .3s;
     transition-timing-function: ease-in-out;
     transform: scaleX(0);
+    border-radius: 10px;
 }
 h4:hover::after{
     transform: scaleX(1);
