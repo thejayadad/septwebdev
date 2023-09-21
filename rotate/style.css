@@ -5,14 +5,15 @@
 }
 body{
     display: grid;
-    width: 100%;
+    width: 50%;
     height: 100vh;
     place-items: center;
+    margin: auto;
     background: linear-gradient(to right, #000, #101010)
 }
 .box{
     width: 100px;
-    height: 130px;
+    height: 100px;
     position: relative;
     transform-style: preserve-3d;
     animation: ani 15s linear infinite;
@@ -33,7 +34,7 @@ body{
     cursor: pointer;
     transform-origin: center;
     transform-style: preserve-3d;
-    transform: rotateY(calc(45deg * var(--i))) translateZ(310px);
+    transform: rotateY(calc(45deg * var(--i))) translateZ(150px);
 
 }
 .box span img{
