@@ -20,26 +20,26 @@ h3{
     cursor: pointer;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 h4{
-   width: max-content;
-   position: relative;
-   cursor: pointer;
-   margin: 10px auto;
+    width: max-content;
+    position: relative;
+    cursor: pointer;
+    margin: 10px auto;
 }
+
 h4::after{
     content: "";
-    position: absolute;
     bottom: -5px;
+    position: absolute;
     height: 4px;
     width: 100%;
     left: 0;
-    background-color: orangered;
+    background-color: orange;
     transition: .3s;
     transition-timing-function: ease-in-out;
     transform: scaleX(0);
-    border-radius: 10px;
 }
 h4:hover::after{
-    transform: scaleX(1);
-
+    transform: scaleX(1)
 }
