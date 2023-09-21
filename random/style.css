@@ -18,14 +18,13 @@ body {
 .button {
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #FF5733;
-    color: #ffffff;
-    border: none;
+    background-color: orangered;
+    color: white;
+    border:none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color .3s ease;
 }
-
-.button:hover {
-    background-color: #FFC300;
+.button:hover{
+    background-color: #ffc300;
 }

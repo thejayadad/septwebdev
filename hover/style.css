@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #222;
+    font-family: sans-serif;
+}
+h3{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h4{
+   width: max-content;
+   position: relative;
+   cursor: pointer;
+   margin: 10px auto;
+}
+h4::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background-color: orangered;
+    transition: .3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+h4:hover::after{
+    transform: scaleX(1);
+
+}
