@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+
+
+#container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
+.raindrop {
+    position: absolute;
+    background-color: #00f;
+    opacity: 0.7;
+    pointer-events: none;
+    animation: fall 1s linear infinite;
+}
+
+.lightning {
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    pointer-events: none;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
